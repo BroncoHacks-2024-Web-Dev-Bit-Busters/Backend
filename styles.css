@@ -84,6 +84,7 @@ nav a:hover {
     padding: 40px;
     background-color: rgb(225, 181, 0); /* Yellow background for about section */
     color: #fff; /* White text */
+    font-size: 25px;
 }
 
 footer {
