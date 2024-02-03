@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial display of all places
     applyFilters();
+
+    // Get all buttons in the navigation
+    const navButtons = document.querySelectorAll('nav a');
+
+    // Add click event listener to each button
+    navButtons.forEach(function (button) {
+        button.addEventListener('click', handleButtonClick);
+    });
+
+    // Add click event listener to each "Learn More" button
+    const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+    learnMoreButtons.forEach(function (button) {
+        button.addEventListener('click', handleLearnMoreClick);
+    });
 });
 
 function applyFilters() {
@@ -39,16 +53,6 @@ function getSelectedValues(category) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Get all buttons in the navigation
-    const navButtons = document.querySelectorAll('nav a');
-
-    // Add click event listener to each button
-    navButtons.forEach(function (button) {
-        button.addEventListener('click', handleButtonClick);
-    });
-});
-
 function handleButtonClick() {
     // Remove 'active' class from all buttons
     document.querySelectorAll('nav a').forEach(function (button) {
@@ -57,4 +61,9 @@ function handleButtonClick() {
 
     // Add 'active' class to the clicked button
     this.classList.add('active');
+}
+
+function handleLearnMoreClick(event) {
+    // Open the link in a new tab
+    window.open(event.target.href, '_blank');
 }

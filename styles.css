@@ -69,18 +69,6 @@ nav a:hover {
     padding-bottom: 100px; /* Reduced padding-bottom for places-section */
 }
 
-.place-box::before {
-    content: ''; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background: rgba(0, 132, 61, 0); /* Transparent background initially */
-    z-index: 1;
-    transition: color 0.3s ease-in-out; /* Smooth background color transition */
-}
-
 .place-box {
     position: relative;
     display: inline-block;
@@ -89,22 +77,9 @@ nav a:hover {
     padding: 20px;
     background-color: rgb(0, 132, 61); /* Green background for each place box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.learn-more {
-    position: absolute;
-    bottom: 10px; /* Adjust the distance from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
-    opacity: 0; /* Initially hidden */
-}
-
-.place-box:hover .learn-more {
-    opacity: 1; /* Show on hover */
-    color: rgb(225, 181, 0); /* Yellow text on hover */
+    overflow: hidden; /* Ensure the overflow is hidden to contain the border-radius */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
 }
 
 .place-container {
@@ -152,9 +127,34 @@ footer {
     margin-bottom: 20px;
     text-align: left;
     font-size: 18px;
-
 }
 
 .filter-section input {
     margin-right: 5px;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -10px; /* Adjust this value to lower the button */
+    padding: 10px 15px;
+    background-color: rgb(1, 66, 106); /* Initial background color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: opacity 0.3s, transform 0.3s; /* Smooth opacity and transform transition */
+}
+
+.learn-more:hover {
+    opacity: 0.8; /* Reduced opacity on hover */
+    transform: scale(1.1); /* Slight zoom out effect on hover */
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth opacity and transform transition with cubic-bezier */
+}
+
+.learn-more {
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.learn-more:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
