@@ -13,7 +13,7 @@ header {
 }
 
 nav {
-    margin-left: 600px;
+    margin-left: 650px;
 }
 
 nav ul {
@@ -59,7 +59,6 @@ nav input:focus {
     box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Adjusted box shadow on focus */
 }
 
-/* Add a transition effect for a smooth visual change */
 nav input {
     padding: 10px 30px 10px 10px;
     border: none;
@@ -139,7 +138,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     margin: 0;
-    margin-left: 180px;
+    margin-left: -60px;
 }
 
 .about-section {
