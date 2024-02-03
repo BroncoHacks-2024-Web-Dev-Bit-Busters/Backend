@@ -108,6 +108,11 @@ nav a:hover {
     color: rgb(225, 181, 0); /* Yellow text on hover */
 }
 
+.place-box:hover {
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    border: 3px solid rgb(225, 181, 0);
+}
+
 .place-container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping to the next line when there's not enough space */
