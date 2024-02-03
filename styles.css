@@ -90,7 +90,7 @@ nav a:hover {
 .place-container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping to the next line when there's not enough space */
-    justify-content: right; /* Center the boxes horizontally */
+    margin-left: 350px;
     margin-top: -400px;
 }
 

@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add event listener to each checkbox
     checkboxes.forEach(function (checkbox) {
-        checkbox.addEventListener('change', applyFilters);
+        checkbox.addEventListener('change', function (event) {
+            applyFilters();
+            event.preventDefault();
+            return false;
+        });
     });
 
     // Initial display of all places
