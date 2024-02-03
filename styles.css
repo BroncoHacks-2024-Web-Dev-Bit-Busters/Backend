@@ -131,7 +131,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping to the next line when there's not enough space */
     margin-left: 350px;
-    margin-top: -400px;
+    margin-top: -550px;
 }
 
 .search-container {

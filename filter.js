@@ -37,6 +37,7 @@ function applyFilters() {
     // Get selected values from checkboxes
     const selectedMeals = getSelectedValues('meal');
     const selectedCuisines = getSelectedValues('cuisine');
+    const selectedDietaryRestrictions = getSelectedValues('restrictions'); // New line
 
     // Get all place boxes
     const placeBoxes = document.querySelectorAll('.place-box');
@@ -48,16 +49,18 @@ function applyFilters() {
     placeBoxes.forEach(function (placeBox) {
         const placeMeal = placeBox.getAttribute('data-meal');
         const placeCuisine = placeBox.getAttribute('data-cuisine').split(' '); // Split into an array
+        const placeDietaryRestrictions = placeBox.getAttribute('data-restrictions').split(' '); // New line
 
         const isMealMatch = selectedMeals.length === 0 || selectedMeals.some(meal => placeMeal.includes(meal));
         const isCuisineMatch = selectedCuisines.length === 0 || selectedCuisines.every(cuisine => placeCuisine.includes(cuisine));
+        const isDietaryRestrictionsMatch = selectedDietaryRestrictions.length === 0 || selectedDietaryRestrictions.every(dr => placeDietaryRestrictions.includes(dr)); // New line
 
         // Add search functionality
         const placeName = placeBox.querySelector('h3').innerText.toLowerCase();
         const isSearchMatch = placeName.includes(searchQuery);
 
         // Show/hide place box based on filters and search query
-        placeBox.style.display = isMealMatch && isCuisineMatch && isSearchMatch ? 'block' : 'none';
+        placeBox.style.display = isMealMatch && isCuisineMatch && isDietaryRestrictionsMatch && isSearchMatch ? 'block' : 'none'; // Updated line
     });
 }
 

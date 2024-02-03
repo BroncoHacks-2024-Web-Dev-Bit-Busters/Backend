@@ -64,80 +64,92 @@
             <label>
                 <input type="checkbox" name="cuisine" value="asian" class="filter-checkbox"> Asian
             </label>
+
+             <!-- Dietary Restrictions Section -->
+            <h3>Dietary Restrictions</h3>
+            <label>
+                <input type="checkbox" name="restrictions" value="vegan" class="filter-checkbox"> Vegan Options
+            </label>
+            <label>
+                <input type="checkbox" name="restrictions" value="vegetarian" class="filter-checkbox"> Vegetarian Friendly
+            </label>
+            <label>
+                <input type="checkbox" name="restrictions" value="gluten-free" class="filter-checkbox"> Gluten Free options
+            </label>
         </div>
 
         <div class="place-container">
             <!-- Place boxes will be dynamically added here using JavaScript -->
-            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american" data-restrictions="vegan gluten-free">
                 <img src="https://media.designrush.com/inspiration_images/137088/conversions/_1525811908_162_Starbucks-Logo-Full-mobile.jpg" alt="Restaurant 1" width = "300" length = "300">
                 <h3>Starbucks</h3>
                 <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
                 <a href="https://www.starbucks.com" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american">
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american" data-restrictions="gluten-free">
                 <img src="https://newsroom.subway.com/image/Subway+Series+Logo_thumbnail.png" alt="Restaurant 2" width = "300" length = "300">
                 <h3>Subway</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.subway.com/en-us" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="asian">
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="asian" data-restrictions="">
                 <img src="https://m.media-amazon.com/images/I/61iBBwEsrZL.jpg" alt="Restaurant 3" width = "300" length = "300">
                 <h3>Panda Express</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.pandaexpress.com/" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="mexican">
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="mexican" data-restrictions="vegetarian">
                 <img src="https://i.pinimg.com/736x/63/b9/2a/63b92ae5f63dfcca5b49a343e9f65e87.jpg" alt="Restaurant 4" width = "300" length = "300">
                 <h3>QDoba</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.qdoba.com/menu" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="asian">
+            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="asian" data-restrictions="">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/Hibachi-Logo-400w.jpg" alt="Restaurant 5" width = "300" length = "300">
                 <h3>Hibachi-San</h3>
                 <a href="https://auxiliarydocs.ucr.edu/dining/hibachi-san-menu.pdf?_gl=1*z8falo*_ga*MjAxNjYwMDE3OC4xNjg5MTA0MTQ3*_ga_S8BZQKWST2*MTY4OTE5NjAyNC40LjEuMTY4OTE5NzI3Ny4wLjAuMA..*_ga_Z1RGSBHBF7*MTY4OTE5NjAyNC40LjEuMTY4OTE5NzI3Ny4wLjAuMA" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="lunch_dinner breakfast" data-cuisine="american">
+            <div class="place-box" data-meal="lunch_dinner breakfast" data-cuisine="american" data-restrictions="vegan">
                 <img src="https://1000logos.net/wp-content/uploads/2020/10/Carls-Jr.-Logo-1977.jpg" alt="Restaurant 6" width = "300" length = "300">
                 <h3>Carl's Junior</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.carlsjr.com/full-menu" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="american">
+            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="american" data-restrictions="">
                 <img src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/roundtablepizza/profile/logo-1584731195-173f951fc830b0d2d2e929457e0d898f.jpg?v=3&d=eyJvcHMiOiBbWyJyZXNpemUiLCBbMzUwXSwge31dXSwgImZvcmNlIjogZmFsc2UsICJvbmx5X21ldGEiOiBmYWxzZX0=" alt="Restaurant 7" width = "300" length = "300">
                 <h3>Round Table</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.roundtablepizza.com/menu/" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="breakfast lunch_dinner snacks drinks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast lunch_dinner snacks drinks" data-cuisine="american" data-restrictions="gluten-free vegetarian vegan">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/polyfresh-logo-400w.jpg" alt="Restaurant 8" width = "300" length = "300">
                 <h3>Poly Fresh Market</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.starbucks.com" target="_blank" class="learn-more">Learn More</a>
             </div>
 
-            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="american asian mexican">
+            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="american asian mexican" data-restrictions="">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/bric-break-logo.jpg" alt="Restaurant 9" width = "300" length = "300">
                 <h3>BRIC Break</h3>
                 <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
                 <a href="https://foundation.cpp.edu/dining/restaurants-bric-break.aspx" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american" data-restrictions="gluten-free vegetarian vegan">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/vistamarket-logo-400w.jpg" alt="Restaurant 10" width = "300" length = "300">
                 <h3>Vista Market</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://foundation.cpp.edu/dining/restaurants-vista-market.aspx" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american" data-restrictions="gluten-free vegetarian">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/saddles-logo-400w.jpg" alt="Restaurant 11" width = "300" length = "300">
                 <h3>Saddles</h3>
                 <p>Saddles Cafe is dedicated to providing an exquisite selection of specialty coffee and tea beverages, complemented by an 
@@ -145,14 +157,14 @@
                 <a href="https://foundation.cpp.edu/dining/restaurants-saddles-cafe.aspx" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="breakfast lunch_dinner snacks drinks" data-cuisine="american asian mexican">
+            <div class="place-box" data-meal="breakfast lunch_dinner snacks drinks" data-cuisine="american asian mexican" data-restrictions="gluten-free vegan vegetarian">
                 <img src="https://www.foundation.cpp.edu/dining/assets/img/logo/centerpointe-logo-400w.jpg" alt="Restaurant 12" width = "300" length = "300">
                 <h3>Centerpointe</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.centerpointedining.com/menu-sections/" target="_blank" class="learn-more">Learn More</a>
             </div>
 
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american asian mexican">
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american asian mexican" data-restrictions="">
                 <img src="https://www.foundation.cpp.edu/dining/assets/img/logo/fitbites-logo.jpg" alt="Restaurant 13" width = "300" length = "300">
                 <h3>FitBites</h3>
                 <p>Experience a unique culinary journey at Fitbites, where we bring together a delightful blend of diverse cuisines.</p>
