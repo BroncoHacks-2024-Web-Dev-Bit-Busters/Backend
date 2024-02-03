@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Add event listener to the search input
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', applyFilters);
+
     // Initial display of all places
     applyFilters();
 
@@ -37,7 +41,10 @@ function applyFilters() {
     // Get all place boxes
     const placeBoxes = document.querySelectorAll('.place-box');
 
-    // Iterate over place boxes to show/hide based on filters
+    // Get the search input value
+    const searchQuery = searchInput.value.toLowerCase();
+
+    // Iterate over place boxes to show/hide based on filters and search query
     placeBoxes.forEach(function (placeBox) {
         const placeMeal = placeBox.getAttribute('data-meal');
         const placeCuisine = placeBox.getAttribute('data-cuisine').split(' '); // Split into an array
@@ -45,8 +52,12 @@ function applyFilters() {
         const isMealMatch = selectedMeals.length === 0 || selectedMeals.some(meal => placeMeal.includes(meal));
         const isCuisineMatch = selectedCuisines.length === 0 || selectedCuisines.every(cuisine => placeCuisine.includes(cuisine));
 
-        // Show/hide place box based on filters
-        placeBox.style.display = isMealMatch && isCuisineMatch ? 'block' : 'none';
+        // Add search functionality
+        const placeName = placeBox.querySelector('h3').innerText.toLowerCase();
+        const isSearchMatch = placeName.includes(searchQuery);
+
+        // Show/hide place box based on filters and search query
+        placeBox.style.display = isMealMatch && isCuisineMatch && isSearchMatch ? 'block' : 'none';
     });
 }
 

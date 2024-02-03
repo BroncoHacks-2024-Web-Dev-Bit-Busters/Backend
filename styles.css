@@ -12,6 +12,10 @@ header {
     padding: 15px; /* Increased padding for header */
 }
 
+nav {
+    margin-left: 600px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -33,6 +37,31 @@ nav a {
     font-size: 24px; /* Slightly reduced button size */
     position: relative;
     transition: color 0.3s, border-bottom-width 0.3s; /* Smooth color and border-bottom-width transition */
+}
+
+/* Add these styles to your existing CSS */
+
+nav input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left:300px; /* Adjusted margin for the search bar */
+    font-size: 14px; /* Adjusted font size */
+    width: 200px; /* Adjusted width for the search bar */
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+nav input:focus {
+    outline: none;
+    border: 2px solid #0056b3; /* Highlight border on focus with a darker blue color */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Adjusted box shadow on focus */
+}
+
+/* Add a transition effect for a smooth visual change */
+nav input {
+    transition: all 0.3s;
 }
 
 nav a::after {
