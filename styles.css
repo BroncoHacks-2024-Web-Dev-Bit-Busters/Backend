@@ -210,3 +210,46 @@ footer {
 .learn-more:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        margin-left: 5%; /* Adjusted margin for better mobile responsiveness */
+    }
+
+    nav li {
+        margin-right: 10px; /* Reduced margin between buttons for better mobile responsiveness */
+    }
+
+    nav a {
+        font-size: 16px; /* Adjusted button size for better mobile responsiveness */
+    }
+
+    nav input {
+        width: 120px; /* Adjusted width for better mobile responsiveness */
+    }
+
+    .places-section {
+        padding-bottom: 50px; /* Reduced padding-bottom for better mobile responsiveness */
+    }
+
+    .place-box {
+        width: 100%; /* Full width for better mobile responsiveness */
+        margin: 10px 0; /* Adjusted margin for better mobile responsiveness */
+    }
+
+    .place-container {
+        margin-left: 0; /* Centered place-container for better mobile responsiveness */
+    }
+
+    .search-container {
+        margin-left: 0; /* Centered search-container for better mobile responsiveness */
+    }
+
+    .about-section {
+        padding: 20px; /* Reduced padding for better mobile responsiveness */
+    }
+
+    .filter-section {
+        width: 100%; /* Full width for better mobile responsiveness */
+    }
+}
