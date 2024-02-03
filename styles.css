@@ -110,9 +110,11 @@ footer {
 }
 
 .filter-section label {
-    display: block;
-    margin-bottom: 10px;
-    text-align: left; 
+    display: flex;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 35px;
+
 }
 
 .filter-section input {
