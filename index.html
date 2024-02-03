@@ -17,7 +17,7 @@
                 <li><a href="#about">About</a></li>
                 <li><img src="cppLogo.jpg" alt="Dining Guide Logo" class="logo-image"></li>
                 <li><a href="#places">Places to Eat</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="https://www.foundation.cpp.edu/dining/hours/current/index.htm" target="_blank">Dining Hours</a></li>
                 <input type="text" id="searchInput" placeholder="Search by place...">
             </ul>
         </nav>
@@ -47,6 +47,9 @@
             <label>
                 <input type="checkbox" name="meal" value="snacks" class="filter-checkbox"> Snacks
             </label>
+            <label>
+                <input type="checkbox" name="meal" value="drinks" class="filter-checkbox"> Drinks
+            </label>
 
             <!-- Cuisine Section -->
             <h3>Cuisine</h3>
@@ -63,7 +66,7 @@
 
         <div class="place-container">
             <!-- Place boxes will be dynamically added here using JavaScript -->
-            <div class="place-box" data-meal="breakfast snacks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american">
                 <img src="https://media.designrush.com/inspiration_images/137088/conversions/_1525811908_162_Starbucks-Logo-Full-mobile.jpg" alt="Restaurant 1" width = "300" length = "300">
                 <h3>Starbucks</h3>
                 <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
@@ -91,7 +94,7 @@
                 <a href="https://www.qdoba.com/menu" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="asian">
+            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="asian">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/Hibachi-Logo-400w.jpg" alt="Restaurant 5" width = "300" length = "300">
                 <h3>Hibachi-San</h3>
                 <a href="https://auxiliarydocs.ucr.edu/dining/hibachi-san-menu.pdf?_gl=1*z8falo*_ga*MjAxNjYwMDE3OC4xNjg5MTA0MTQ3*_ga_S8BZQKWST2*MTY4OTE5NjAyNC40LjEuMTY4OTE5NzI3Ny4wLjAuMA..*_ga_Z1RGSBHBF7*MTY4OTE5NjAyNC40LjEuMTY4OTE5NzI3Ny4wLjAuMA" target="_blank" class="learn-more">Learn More</a>
@@ -104,35 +107,35 @@
                 <a href="https://www.carlsjr.com/full-menu" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american">
+            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="american">
                 <img src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/roundtablepizza/profile/logo-1584731195-173f951fc830b0d2d2e929457e0d898f.jpg?v=3&d=eyJvcHMiOiBbWyJyZXNpemUiLCBbMzUwXSwge31dXSwgImZvcmNlIjogZmFsc2UsICJvbmx5X21ldGEiOiBmYWxzZX0=" alt="Restaurant 7" width = "300" length = "300">
                 <h3>Round Table</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.roundtablepizza.com/menu/" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="breakfast lunch_dinner snacks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast lunch_dinner snacks drinks" data-cuisine="american">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/polyfresh-logo-400w.jpg" alt="Restaurant 8" width = "300" length = "300">
                 <h3>Poly Fresh Market</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.starbucks.com" target="_blank" class="learn-more">Learn More</a>
             </div>
 
-            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american asian mexican">
+            <div class="place-box" data-meal="lunch_dinner drinks" data-cuisine="american asian mexican">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/bric-break-logo.jpg" alt="Restaurant 9" width = "300" length = "300">
                 <h3>BRIC Break</h3>
                 <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
                 <a href="https://foundation.cpp.edu/dining/restaurants-bric-break.aspx" target="_blank" class="learn-more">Learn More</a>
             </div>
     
-            <div class="place-box" data-meal="breakfast snacks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/vistamarket-logo-400w.jpg" alt="Restaurant 10" width = "300" length = "300">
                 <h3>Vista Market</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://foundation.cpp.edu/dining/restaurants-vista-market.aspx" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="breakfast snacks" data-cuisine="american">
+            <div class="place-box" data-meal="breakfast snacks drinks" data-cuisine="american">
                 <img src="https://foundation.cpp.edu/dining/assets/img/logo/saddles-logo-400w.jpg" alt="Restaurant 11" width = "300" length = "300">
                 <h3>Saddles</h3>
                 <p>Saddles Cafe is dedicated to providing an exquisite selection of specialty coffee and tea beverages, complemented by an 
@@ -140,13 +143,22 @@
                 <a href="https://foundation.cpp.edu/dining/restaurants-saddles-cafe.aspx" target="_blank" class="learn-more">Learn More</a>
             </div>
             
-            <div class="place-box" data-meal="breakfast lunch_dinner snacks" data-cuisine="american asian mexican">
+            <div class="place-box" data-meal="breakfast lunch_dinner snacks drinks" data-cuisine="american asian mexican">
                 <img src="https://www.foundation.cpp.edu/dining/assets/img/logo/centerpointe-logo-400w.jpg" alt="Restaurant 12" width = "300" length = "300">
                 <h3>Centerpointe</h3>
                 <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
                 <a href="https://www.centerpointedining.com/menu-sections/" target="_blank" class="learn-more">Learn More</a>
             </div>
+
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american asian mexican">
+                <img src="https://www.foundation.cpp.edu/dining/assets/img/logo/fitbites-logo.jpg" alt="Restaurant 13" width = "300" length = "300">
+                <h3>FitBites</h3>
+                <p>Experience a unique culinary journey at Fitbites, where we bring together a delightful blend of diverse cuisines.</p>
+                <a href="https://www.foundation.cpp.edu/dining/restaurants-fitbites.aspx" target="_blank" class="learn-more">Learn More</a>
+            </div>
     </section>
+
+
 
     <footer>
         <p>&copy; 2024 CPP On-Campus Dining Guide. All rights reserved.</p>
