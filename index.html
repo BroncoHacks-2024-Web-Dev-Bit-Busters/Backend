@@ -37,103 +37,107 @@
             <!-- Meal Section -->
             <h3>Meal</h3>
             <label>
-                <input type="checkbox" name="meal" value="breakfast"> Breakfast
+                <input type="checkbox" name="meal" value="breakfast" class="filter-checkbox"> Breakfast
             </label>
             <label>
-                <input type="checkbox" name="meal" value="lunch_dinner"> Lunch/Dinner
+                <input type="checkbox" name="meal" value="lunch_dinner" class="filter-checkbox"> Lunch/Dinner
             </label>
             <label>
-                <input type="checkbox" name="meal" value="snacks"> Snacks
+                <input type="checkbox" name="meal" value="snacks" class="filter-checkbox"> Snacks
             </label>
 
             <!-- Cuisine Section -->
             <h3>Cuisine</h3>
             <label>
-                <input type="checkbox" name="cuisine" value="american"> American
+                <input type="checkbox" name="cuisine" value="american" class="filter-checkbox"> American
             </label>
             <label>
-                <input type="checkbox" name="cuisine" value="mexican"> Mexican
+                <input type="checkbox" name="cuisine" value="mexican" class="filter-checkbox"> Mexican
             </label>
             <label>
-                <input type="checkbox" name="cuisine" value="asian"> Asian
+                <input type="checkbox" name="cuisine" value="asian" class="filter-checkbox"> Asian
             </label>
         </div>
 
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 1">
-            <h3>Starbucks</h3>
-            <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
-        </div>
+        <div class="place-container">
+            <!-- Place boxes will be dynamically added here using JavaScript -->
+            <div class="place-box" data-meal="breakfast snacks" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
+                <h3>Starbucks</h3>
+                <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
+            </div>
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
+                <h3>Subway</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
+            
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="asian">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
+                <h3>Panda Express</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
+    
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="asian">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 4">
+                <h3>QDoba</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
+    
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="asian">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 5">
+                <h3>Hibachi-San</h3>
+                <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
+            </div>
+    
+            <div class="place-box" data-meal="lunch_dinner breakfast" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 6">
+                <h3>Carl's Junior</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
+            
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 7">
+                <h3>Round Table</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
+            
+            <div class="place-box" data-meal="breakfast lunch_dinner snacks" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 8">
+                <h3>Poly Fresh Market</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
 
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 2">
-            <h3>Subway</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-        
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 3">
-            <h3>Panda Express</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 4">
-            <h3>QDoba</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 5">
-            <h3>Hibachi-San</h3>
-            <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
-        </div>
-
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 6">
-            <h3>Carl's Junior</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-        
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 7">
-            <h3>Round Table</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-        
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 8">
-            <h3>Poly Fresh Market</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 9">
-            <h3>Food Haven</h3>
-            <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
-        </div>
-
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 10">
-            <h3>Vista Market</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
-        </div>
-        
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 11">
-            <h3>Saddles</h3>
-            <p>HELLO THIS THSSEAASEofi aeboei</p>
-        </div>
-        
-        <div class="place-box">
-            <img src="https://via.placeholder.com/300" alt="Restaurant 12">
-            <h3>Centerpointe</h3>
-            <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            <div class="place-box" data-meal="lunch_dinner" data-cuisine="american asian mexican">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 9">
+                <h3>Fitbites</h3>
+                <p>A cozy place offering a variety of delicious meals. Perfect for a quick bite or a leisurely meal.</p>
+            </div>
+    
+            <div class="place-box" data-meal="breakfast snacks" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 10">
+                <h3>Vista Market</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
+            
+            <div class="place-box" data-meal="breakfast snacks" data-cuisine="american">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 11">
+                <h3>Saddles</h3>
+                <p>HELLO THIS THSSEAASEofi aeboei</p>
+            </div>
+            
+            <div class="place-box" data-meal="breakfast lunch_dinner" data-cuisine="american asian mexican">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 12">
+                <h3>Centerpointe</h3>
+                <p>Healthy and fresh options for those looking for nutritious meals. Salads, smoothies, and more!</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 CPP On-Campus Dining Guide. All rights reserved.</p>
     </footer>
+    <script src="filter.js"></script>
 
 </body>
 
