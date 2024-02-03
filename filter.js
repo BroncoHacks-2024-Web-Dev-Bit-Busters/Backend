@@ -22,10 +22,10 @@ function applyFilters() {
     // Iterate over place boxes to show/hide based on filters
     placeBoxes.forEach(function (placeBox) {
         const placeMeal = placeBox.getAttribute('data-meal');
-        const placeCuisine = placeBox.getAttribute('data-cuisine');
+        const placeCuisine = placeBox.getAttribute('data-cuisine').split(' '); // Split into an array
 
         const isMealMatch = selectedMeals.length === 0 || selectedMeals.some(meal => placeMeal.includes(meal));
-        const isCuisineMatch = selectedCuisines.length === 0 || selectedCuisines.includes(placeCuisine);
+        const isCuisineMatch = selectedCuisines.length === 0 || selectedCuisines.every(cuisine => placeCuisine.includes(cuisine));
 
         // Show/hide place box based on filters
         placeBox.style.display = isMealMatch && isCuisineMatch ? 'block' : 'none';
