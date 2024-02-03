@@ -1,0 +1,120 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 66, 106); /* Dark blue background */
+    color: #fff; /* White text */
+}
+
+header {
+    background-color: rgb(0, 132, 61); /* Green header background */
+    color: #fff; /* White text */
+    padding: 15px; /* Increased padding for header */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav li {
+    margin-right: 30px; /* Adjusted margin between buttons */
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-weight: bold;
+    font-size: 18px; /* Slightly reduced button size */
+    position: relative;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff; /* White underline color */
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Animation duration and easing */
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: rgb(225, 181, 0); /* Yellow text on hover */
+}
+
+.logo-image {
+    width: 200px; /* Adjusted the size of the logo */
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.places-section {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 100px; /* Reduced padding-bottom for places-section */
+}
+
+.place-box {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(0, 132, 61); /* Green background for each place box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(225, 181, 0); /* Yellow background for about section */
+    color: #fff; /* White text */
+}
+
+footer {
+    background-color: #333; /* Dark gray background for footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 15px; /* Increased padding for footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.filter-section {
+    border-color: rgb(0, 0, 0); /* Green background for filter section */
+    color: #fff; /* White text */
+    padding: 20px;
+    width: 200px; /* Adjust the width of the filter section */
+}
+
+.filter-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.filter-section input {
+    margin-right: 5px;
+}
