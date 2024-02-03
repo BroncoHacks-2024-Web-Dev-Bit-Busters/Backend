@@ -38,3 +38,23 @@ function getSelectedValues(category) {
         return checkbox.value;
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all buttons in the navigation
+    const navButtons = document.querySelectorAll('nav a');
+
+    // Add click event listener to each button
+    navButtons.forEach(function (button) {
+        button.addEventListener('click', handleButtonClick);
+    });
+});
+
+function handleButtonClick() {
+    // Remove 'active' class from all buttons
+    document.querySelectorAll('nav a').forEach(function (button) {
+        button.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked button
+    this.classList.add('active');
+}
