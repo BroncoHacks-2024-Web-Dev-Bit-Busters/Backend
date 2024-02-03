@@ -30,7 +30,7 @@ nav a {
     text-decoration: none;
     color: #fff; /* White text */
     font-weight: bold;
-    font-size: 18px; /* Slightly reduced button size */
+    font-size: 24px; /* Slightly reduced button size */
     position: relative;
     transition: color 0.3s; /* Smooth color transition */
 }
