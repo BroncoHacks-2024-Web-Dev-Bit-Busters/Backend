@@ -61,7 +61,18 @@ nav input:focus {
 
 /* Add a transition effect for a smooth visual change */
 nav input {
-    transition: all 0.3s;
+    padding: 10px 30px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url('search.png');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
 }
 
 nav a::after {
@@ -122,6 +133,13 @@ nav a:hover {
     flex-wrap: wrap; /* Allow wrapping to the next line when there's not enough space */
     margin-left: 350px;
     margin-top: -400px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 180px;
 }
 
 .about-section {
